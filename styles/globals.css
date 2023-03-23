@@ -16,6 +16,10 @@
     --signature: 'Satisfy', cursive;
 }
 
+.inactive{
+    display: none;
+}
+
 body{
     background-color: var(--secondaryBlack);
     font-family: var(--primaryFont);
