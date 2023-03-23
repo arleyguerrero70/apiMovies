@@ -3,9 +3,7 @@ const HEAD_API = 'https://api.themoviedb.org/3'
 
 async function getTrendingMoviesPreview(){
     const res = await fetch(HEAD_API + '/trending/movie/day?api_key=' + API_KEY)
-    console.log(res)
     const data = await res.json()
-    console.log(data)
 
     const movies = data.results
 
@@ -45,10 +43,38 @@ async function getTrendingMoviesPreview(){
         containerCategoryImage.appendChild(containerMovieTitle)
         containerMovieTitle.appendChild(movieTitle)
         movieTitle.appendChild(appendMovieTitle)
-
-
-
     })
 }
 
 getTrendingMoviesPreview()
+
+
+async function getCategoriesMovie(){
+    const res = await fetch(HEAD_API + '/genre/movie/list?api_key=' + API_KEY + '&language=es')
+    const data = await res.json()
+
+    const categories = data.genres
+
+    categories.forEach(category => {
+        const containerCategories = document.querySelector('.contentAllCategories')
+
+        const sectionNameCategories = document.createElement('section')
+        sectionNameCategories.classList.add('itemAllCategories')
+
+        const ctaNameCategories = document.createElement('a')
+        ctaNameCategories.setAttribute('href', 'google.com')
+
+        const nameCategories = document.createElement('p')
+        nameCategories.classList.add('titleAllCategory')
+
+        const getNameCategories = document.createTextNode(category.name)
+
+
+        containerCategories.appendChild(sectionNameCategories)
+        sectionNameCategories.appendChild(ctaNameCategories)
+        ctaNameCategories.appendChild(nameCategories)
+        nameCategories.appendChild(getNameCategories)
+    })
+}
+
+getCategoriesMovie()
