@@ -146,6 +146,10 @@ body{
     margin: 0;
     padding: .5rem 1rem;
 }
+.contentCountdown p::before{
+    content: "⭐";
+    padding: 0 .25rem;
+}
 .categoryDescription{
     display: flex;
     justify-content: center;
