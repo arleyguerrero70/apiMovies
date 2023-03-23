@@ -1,0 +1,188 @@
+:root{
+    /*COLORS*/
+    --primary: #FF343F;
+    --secondary: #0269A3;
+    --primaryBlack: #1c1f22;
+    --secondaryBlack: #212428;
+    --primaryGray: #68676e;
+    --secondaryGray: #9d9d9d;
+    --allWhite: #fff;
+    --allBlack: #000;
+
+    /*FONTS*/
+    --primaryFont: 'DM Sans', sans-serif;;
+    --secondaryFont: 'Raleway', sans-serif;
+    --thirdFont: 'Oswald', sans-serif;
+    --signature: 'Satisfy', cursive;
+}
+
+body{
+    background-color: var(--secondaryBlack);
+    font-family: var(--primaryFont);
+    color: var(--allWhite);
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    width: 320px;
+}
+
+.topBanner{
+    background-color: var(--primaryBlack);
+    color: var(--allWhite);
+    margin: 0;
+}
+.topBanner h4{
+    text-align: center;
+    margin: 0;
+    padding: .5rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: .75rem 0;
+}
+.figureLogoApp{
+    width: 50px;
+    margin: 0;
+}
+.logoApp{
+    width: 100%;
+}
+.containerHeroBanner{
+    width: 92%;
+    margin: 0 auto;
+}
+.heroBanner{
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.imgHeroBanner{
+    width: 100%;
+    border-radius: .5rem;
+}
+.heroTitle{
+    font-family: var(--thirdFont);
+    font-size: 1rem;
+}
+.heroTitle h1{
+    margin: 0;
+    padding: .5rem 0 .25rem 0;
+}
+.descriptionHero{
+    font-family: var(--secondaryFont);
+    color: var(--secondaryGray);
+}
+.descriptionHero p{
+    font-size: .9rem;
+    margin: 0;
+}
+.heroCTA{
+    display: flex;
+    justify-content: center;
+    font-family: var(--secondaryFont);
+    margin: 1rem auto;
+}
+.heroCTA a{
+    background-color: var(--primary);
+    color: var(--allWhite);
+    padding: .5rem 1.25rem;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.categoryHero{
+    padding: 0 .25rem;
+    margin: 3rem 0 0 1rem;
+}
+.titleCategory,
+.titleAllCategories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--thirdFont);
+}
+.titleCategory h2{
+    margin: 0;
+}
+.titleCategory a{
+    color: var(--primary);
+    text-decoration: none;
+}
+.containerCard{
+    background-color: var(--primaryBlack);
+    border-radius: 22px;
+    padding: 2.25rem 1rem 1rem 1rem;
+    margin: 2rem 0;
+}
+.categoryCardImage{
+    position: relative;
+}
+.contentCardImage{
+    width: 100%;
+    margin: 0;
+}
+.cardImage{
+    width: 100%;
+    border-radius: 22px;
+}
+.contentCountdown{
+    position: absolute;
+    border: 2px solid var(--primary);
+    background-color: var(--secondaryBlack);
+    border-radius: 20px ;
+    top: -16px;
+    right: -6px;
+}
+.contentCountdown p{
+    color:  var(--allWhite);
+    margin: 0;
+    padding: .5rem 1rem;
+}
+.categoryDescription{
+    display: flex;
+    justify-content: center;
+}
+.categoryDescription h3{
+    text-align: center;
+    margin: 0;
+    padding: .5rem 0;
+}
+.containerAllCategories{
+    margin: 0 auto 1rem auto;
+    box-sizing: border-box;
+}
+.titleAllCategories{
+    font-size: 1.5rem;
+    margin: 0;
+}
+.contentAllCategories{
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-gap: 1.5rem;
+    justify-content: center;
+    margin: 2rem 0 0 0;
+}
+.itemAllCategories{
+    border: 1px solid var(--allWhite);
+    border-radius: 1rem;
+    padding: 1rem;
+}
+.itemAllCategories a{
+    text-decoration: none;
+}
+.itemAllCategoriesFigure{
+    width: 70%;
+    margin: .5rem auto;
+}
+.itemAllCategoriesFigure img{
+    width: 100%;
+}
+.titleAllCategory{
+    margin: 0;
+    text-align: center;
+    color: var(--allWhite);
+}

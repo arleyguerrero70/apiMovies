@@ -4,11 +4,116 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <!--END FONTS-->
+
     <link rel="stylesheet" href="./styles/globals.css">
+    <link rel="stylesheet" href="./styles/footer.css">
     <title>Peliculas</title>
 </head>
 <body>
-    
+    <div class="topBanner">
+        <h4>Bienvenido a PeliApp</h4>
+    </div>
+    <nav class="navbar">
+        <div class="contentLogoApp">
+            <figure class="figureLogoApp">
+                <img class="logoApp" src="./src/img/logoIcon.png" alt="">
+            </figure>
+        </div>
+        <div class="search">
+            <input type="¿Qué estás buscando?">
+        </div>
+        <!-- <ul>
+            <li>Actuales</li>
+            <li>Pasadas</li>
+            <li>Estrenos</li>
+            <li>Favoritas</li>
+        </ul> -->
+    </nav>
+    <main class="contenrHero">
+        <section class="containerHeroBanner">
+            <div class="contentHeroBanner">
+                <figure class="heroBanner">
+                    <img class="imgHeroBanner" src="./src/img/what-if-marvel-iron-man.gif" alt="">
+                </figure>
+            </div>
+            <div class="heroTitle">
+                <h1>Pelicula del momento</h1>
+            </div>
+            <div class="descriptionHero">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, impedit.</p>
+            </div>
+            <div class="heroCTA">
+                <a href="">Cónoce más 👉</a>
+            </div>
+        </section>
+        <section class="categoryHero">
+            <div class="titleCategory">
+                <h2>Tendencias</h2>
+                <a href="">ver más</a>
+            </div>
+            <div class="containerCard">
+                <div class="categoryCardImage">
+                    <figure class="contentCardImage">
+                        <img  class="cardImage" src="./src/img/poster.jpg" alt="">
+                    </figure>
+                    <!-- <figure class="contentIconImage">
+                        <img class="iconImage" src="" alt="">
+                    </figure> -->
+                    <div class="contentCountdown">
+                        <p>0:0:0</p>
+                    </div>
+                </div>
+                <div class="categoryDescription">
+                    <h3>Title Movie</h3>
+                    <!-- <figure class="categotyDescriptionLike">
+                        <img src="" alt="">
+                    </figure> -->
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <article class="containerAllCategories">
+        <h3 class="titleAllCategories">Categorías</h3>
+        <div class="contentAllCategories">
+            <section class="itemAllCategories">
+                <a href="">
+                    <figure class="itemAllCategoriesFigure">
+                        <img src="./src/img/allCategoriesIcon.png" alt="">
+                    </figure>
+                    <p class="titleAllCategory">Título categoría</p>
+                </a>
+            </section>
+            <section class="itemAllCategories">
+                <a href="">
+                    <figure class="itemAllCategoriesFigure">
+                        <img src="./src/img/allCategoriesIcon.png" alt="">
+                    </figure>
+                    <p class="titleAllCategory">Título categoría</p>
+                </a>
+            </section>
+            <section class="itemAllCategories">
+                <a href="">
+                    <figure class="itemAllCategoriesFigure">
+                        <img src="./src/img/allCategoriesIcon.png" alt="">
+                    </figure>
+                    <p class="titleAllCategory">Título categoría</p>
+                </a>
+            </section>
+        </div>
+    </article>
+
+    <footer>
+        <h2>Desarrollado por <a href="https://www.linkedin.com/in/arley-a-guerrero-a70/" target="_blank"> Arley Guerrero</a></h2>
+    </footer>
 
     <script src="./scripts/secret.js"></script>
     <script src="./scripts/globals.js"></script>
