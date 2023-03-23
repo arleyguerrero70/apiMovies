@@ -1,3 +1,4 @@
+const API_KEY = '76cf5b839ff14e2cc3ba78216df7c5da'
 const HEAD_API = 'https://api.themoviedb.org/3'
 
 async function getTrendingMoviesPreview(){
@@ -30,7 +31,7 @@ async function getTrendingMoviesPreview(){
         const containerMovieVote = document.createElement('div')
         containerMovieVote.classList.add('contentCountdown')
         const contentMovieVote = document.createElement('p')
-        const dataMovieVote = document.createTextNode(movie.vote_average)
+        const dataMovieVote = document.createTextNode((movie.vote_average).toFixed(1))
 
         appendMovie.appendChild(movieContainer)
         movieContainer.appendChild(containerCategoryImage)
