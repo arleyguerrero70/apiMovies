@@ -1,0 +1,19 @@
+{
+  "name": "apirestintermediate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arleyguerrero70/apirestIntermediate.git"
+  },
+  "author": "Arley G",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arleyguerrero70/apirestIntermediate/issues"
+  },
+  "homepage": "https://github.com/arleyguerrero70/apirestIntermediate#readme"
+}
