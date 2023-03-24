@@ -1,10 +1,15 @@
 buttonFormSearch.addEventListener('click', () => {
-    location.hash = '#search='
+    location.hash = `#search=${inputFormSearch.value}`
 })
 
 viewMoreTitle.addEventListener('click', () => {
     location.hash = '#category='
 })
+
+backButton.addEventListener('click', () => {
+    history.back()
+})
+
 
 window.addEventListener('DOMContentLoad', navigator, false)
 window.addEventListener('hashchange', navigator, false)
@@ -23,7 +28,7 @@ function navigator(){
     } else {
         homepage()
     }
-    
+
     window.scrollTo(0, 0);
 
 }
@@ -52,14 +57,21 @@ function searchControllers(){
     topHeader.classList.remove('inactive')
     navigatorContent.classList.remove('inactive')
 
-    mainHero.classList.add('inactive')
+    mainHero.classList.remove('inactive')
+    containerHeroBanner.classList.add('inactive')
     backArrow.classList.remove('inactive')
 
-    titleCategory.classList.add('inactive')
-    containerCardMovies.classList.add('inactive')
-    containerCard.classList.add('inactive')
+    titleCategory.classList.remove('inactive')
+    viewMoreTitle.classList.add('inactive')
+    containerCardMovies.classList.remove('inactive')
+    containerCard.classList.remove('inactive')
 
     containerCategories.classList.add('inactive')
+
+    const [_, query] = location.hash.split('=')
+
+    titleCategory.innerHTML = query
+    getMoviesBySearch(query)
 }
 
 function movieDetails(){

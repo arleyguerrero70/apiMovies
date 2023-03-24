@@ -11,6 +11,8 @@ const viewMoreTitle = document.querySelector('.categoryViewMore')
 const mainHero = document.querySelector('.contentHero')
 const containerHeroBanner = document.querySelector('.containerHeroBanner')
 const backArrow = document.querySelector('.contentArrowBack')
+const backButton = document.querySelector('#backButton')
+
 /*END CONTENT*/
 
 /*CONTAINER CARDS*/

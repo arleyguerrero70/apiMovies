@@ -60,6 +60,10 @@ body{
     margin: 0;
     padding: 1rem;
 }
+#backButton{
+    background-color: transparent;
+    border: transparent;
+}
 .imgArrowBack{
     width: 100%;
 }
