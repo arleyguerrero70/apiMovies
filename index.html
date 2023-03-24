@@ -28,7 +28,10 @@
             </figure>
         </div>
         <div class="search">
-            <input type="¿Qué estás buscando?">
+            <form id="searchForm" class="header-searchForm">
+                <input class="inputSearchForm" type="text" placeholder="Vengadores" />
+                <button id="searchButton">🔍</button>
+            </form>
         </div>
         <!-- <ul>
             <li>Actuales</li>
@@ -37,7 +40,12 @@
             <li>Favoritas</li>
         </ul> -->
     </nav>
-    <main class="contenrHero">
+    <figure class="contentArrowBack">
+        <a href="/">
+            <img class="imgArrowBack" src="./src/img/backIcon.png" alt="">
+        </a>
+    </figure>
+    <main class="contentHero">
         <section class="containerHeroBanner">
             <div class="contentHeroBanner">
                 <figure class="heroBanner">
@@ -57,7 +65,7 @@
         <section class="categoryHero">
             <div class="titleCategory">
                 <h2>Tendencias</h2>
-                <a href="">ver más</a>
+                <button class="categoryViewMore" href="">ver más</button>
             </div>
             <div id="containerCardsMovies">
                 <div class="containerCard">
@@ -89,7 +97,11 @@
         <h2>Desarrollado por <a href="https://www.linkedin.com/in/arley-a-guerrero-a70/" target="_blank"> Arley Guerrero</a></h2>
     </footer>
 
-    <script src="./secret.js"></script>
+    <!--AXIOS-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <!--END AXIOS-->
     <script src="./scripts/globals.js"></script>
+    <script src="./scripts/nodes.js"></script>
+    <script src="./scripts/navigation.js"></script>
 </body>
 </html>
